@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: pdf-encryptor
+    env: docker
+    plan: free
+    region: oregon
+    dockerfilePath: ./Dockerfile
+    buildCommand: ""
+    startCommand: apache2-foreground
